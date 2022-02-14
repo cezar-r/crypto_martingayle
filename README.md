@@ -1,4 +1,4 @@
-# Crypto Martingayle Leverage Strategy
+# Crypto Martingale Leverage Strategy
 
 ## Background
 The Martingale Strategy is one of the most popular strategies when it comes to gambling. The main idea behind this strategy is to double your bet every time you lose in a game.
