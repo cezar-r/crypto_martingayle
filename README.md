@@ -87,10 +87,10 @@ Based on the charts, it is recommended you split your trade into no more than 6 
 - All code can be found in strategy.py
 
 ### Total Liquidation Graph
-[Here](https://github.com/cezar-r/crypto_martingayle/blob/38e22534198ea3ac0911b05fbd898e064efa96e0/strategy.py#L19)
+[Here](https://github.com/cezar-r/crypto_martingayle/blob/0724c9e8cb9300b8f18ddc85f5f76e625579ac84/strategy.py#L17)
 
 ### Asset % Increase to Break Even on Bankroll
-[Here](https://github.com/cezar-r/crypto_martingayle/blob/38e22534198ea3ac0911b05fbd898e064efa96e0/strategy.py#L54)
+[Here](https://github.com/cezar-r/crypto_martingayle/blob/0724c9e8cb9300b8f18ddc85f5f76e625579ac84/strategy.py#L47)
 
 ### Gains % When Asset Breaks Even
-[Here](https://github.com/cezar-r/crypto_martingayle/blob/38e22534198ea3ac0911b05fbd898e064efa96e0/strategy.py#L83)
+[Here](https://github.com/cezar-r/crypto_martingayle/blob/0724c9e8cb9300b8f18ddc85f5f76e625579ac84/strategy.py#L75)
