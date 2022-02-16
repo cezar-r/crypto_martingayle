@@ -12,6 +12,7 @@ plt.style.use("dark_background")
 starting_leverage = [1.5, 2, 3, 4, 5, 6, 10]
 COINPRICE = 100
 BALANCE = 100_000
+TRADESIZE = 10_000
 
 def total_liquidation():
 	for leverage in starting_leverage:
@@ -28,7 +29,7 @@ def total_liquidation():
 			x.append(trades + 1)
 			print(leverage)
 			leverage *= 2
-			balance -= 10000
+			balance -= TRADESIZE
 			trades += 1
 
 		fig, ax = plt.subplots()
@@ -57,7 +58,7 @@ def to_profit():
 			x.append(trades + 1)
 			leverage *= 2
 			to_profit.append((COINPRICE - price)/(price*leverage) * 100)
-			balance -= 10000
+			balance -= TRADESIZE
 			trades += 1
 
 		fig, ax = plt.subplots()
@@ -84,8 +85,9 @@ def profit_at_breakeven():
 				price = price * (1 - (1/leverage))
 				x.append(trades + 1)
 				leverage *= 2
-				gain_pct.append(((((COINPRICE - price)/price) * leverage)  - ((BALANCE - balance) / 20000)) * 100) 
-				balance -= 20000
+				#  takes into account losses on previous trades.
+				gain_pct.append(((((COINPRICE - price)/price) * leverage)  - ((BALANCE - balance) / (TRADESIZE*2))) * 100) 
+				balance -= TRADESIZE*2
 				trades += 1
 
 		fig, ax = plt.subplots()
@@ -105,16 +107,3 @@ if __name__ == '__main__':
 	# profit_at_breakeven()
 
 
-'''
-Total Liquidation: when the price falls below total liquidation, the strategy will not work
-
-Y-axis shows the price of the ticker since the first trade placed
-X-axis shows number of trades placed
-
-Think of the flat part of the graph as how much you can afford the stock to drop
-(since you initally bought it) before the strategy will not work.
-
-With this strategy, a good bet would be to do each order as 1/5th of your bankroll
-as after 5 trades is when the line starts to plateau
-
-'''
