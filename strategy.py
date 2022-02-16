@@ -30,6 +30,7 @@ def total_liquidation():
 			price = price * (1 - (1/leverage))
 			liquidation_levels.append(price)
 			x.append(trades + 1)
+			print(leverage)
 			leverage *= 2
 			balance -= 10000
 			trades += 1
@@ -41,11 +42,12 @@ def total_liquidation():
 		ax.set_title(f'{og_lev}x Leverage\n{round(100  - price, 2)}% Drop before Total Liquidation')
 		ax.plot(x, liquidation_levels)
 		ax.yaxis.set_major_formatter('{x:1.2f}%')
-		ax.set_xlabel("# of Trades")
+		ax.set_xlabel("Leveraged Position")
 		ax.set_ylabel("Price")
+		# ax.set_xticklabels([(2**(i))*og_lev for i in x])
 		plt.tight_layout()
-		plt.savefig(f"{og_lev}_leverage_tot_liq.png")
-		# plt.show()
+		# plt.savefig(f"imgs/{og_lev}_leverage_tot_liq.png")
+		plt.show()
 
 
 
@@ -74,14 +76,43 @@ def to_profit():
 		ax.set_xlabel("# of Trades")
 		ax.set_ylabel("% to break even")
 		plt.tight_layout()
-		plt.savefig(f"{og_lev}_leverage_to_profit.png")
+		plt.savefig(f"imgs/{og_lev}_leverage_to_profit.png")
+		# plt.show()
+
+
+def profit_at_breakeven():
+	for leverage in starting_leverage:
+		og_lev = leverage
+		price = COINPRICE
+		balance = BALANCE
+		x = []
+		gain_pct = []
+		trades = 0
+
+		while balance > 0:
+				price = price * (1 - (1/leverage))
+				x.append(trades + 1)
+				leverage *= 2
+				gain_pct.append((((COINPRICE - price)/price) * leverage) * 100)
+				balance -= 20000
+				trades += 1
+
+		fig, ax = plt.subplots()
+
+		ax.set_title(f'{og_lev}x Leverage\n% Gains On Price Breakeven')
+		ax.plot(x, gain_pct)
+		ax.yaxis.set_major_formatter('{x:1.2f}%')
+		ax.set_xlabel("# of Trades")
+		ax.set_ylabel("Gains after price breakeven")
+		plt.tight_layout()
+		plt.savefig(f"imgs/{og_lev}_profit_breakeven.png")
 		# plt.show()
 
 
 
 # to_profit()
-total_liquidation()
-
+# total_liquidation()
+profit_at_breakeven()
 
 
 '''
