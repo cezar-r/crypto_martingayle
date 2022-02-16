@@ -9,15 +9,15 @@ Be wary though, as the size of your bets increase exponentially with this strate
 
 ## Leverage Trading
 Leverage trading is one of the riskiest ways to trade, especially in a market as volatile as crypto. This is when you borrow money from the exhange for your trade.
-For example, say you want to invest $1,000 into Bitcoin on 5x leverage. The exhange will lend you another $4,000. When you close your trade, the $4,000 goes back to the exhange and you keep the profits.
+For example, say you want to invest $1,000 into Bitcoin on 5x leverage. The exchange will lend you another $4,000. When you close your trade, the $4,000 goes back to the exhange and you keep the profits.
 
 ### Liquidations
 The riskiest part of the leverage trading is quite obvious; you are using someone else's money and the size of your trades are relatively large to what they usually are.
 Another risk that you need to take into consideration before leverage trading is getting liquidated. Liquidation happens when the asset moves 1 / leverage in the opposite direction.
-Let's go back to our example earlier, where we did a 5x leverage trade on Bitcoin. Let's also assume this was a short trade (we want Bitcoin to go down in price). You will be liquitaed of your $1,000 if Bitcoin goes up 20% (1 / 5). 
+Let's go back to our example earlier, where we did a 5x leverage trade on Bitcoin. Let's also assume this was a short trade (we want Bitcoin to go down in price). You will be liquitaed of your $1,000 if Bitcoin goes up 20% (1 / 5). NOTE: you only get liquidated for the amount you put in, not the amount you borrowed.
 
 ## Strategy
-Leverage provides a unique opportunity to use the Martigale strategy, but without its major pitfalls of exponentially increasing bets. In this strategy, we will be placing leveraged trades. Once we get liquidated, rather than doubling our bet, we will just double our leverage position.
+Leverage provides a unique opportunity to use the Martingale strategy, but without its major pitfalls of exponentially increasing bets. In this strategy, we will be placing leveraged trades. Once we get liquidated, rather than doubling our bet, we will just double our leverage position.
 Going back to that example again, if Bitcoin rises 20%, we would then open a 10x leverage short with $1,000. The next position will be 20x, 40x, etc.
 
 ### Pros 
@@ -25,8 +25,13 @@ One of the major advantages of this strategy is that your bets remain constant (
 
 This strategy also doesn't require you to time the market that well (obviously the higher your opening leverage position is the better you will need to time the market).
 
+You also don't need to perfectly estimate where the bottom or the top of an asset price will be. You simply need a price you are confident the asset price won't fall below or above. 
+For example, many people try to buy the bottoms of an asset when it's falling, but the asset continues to fall and they have to DCA. But nobody can time the market perfectly consistently to catch the bottom (or top). With this strategy, you just need to have a worst-case scenario bottom (or top). If you confidently believe an asset will not fall more than 50% in the near future (maybe we have already been in a bear market for a few months at this point), you can already start this strategy off with 3x leverage and have a high chance of profiting.
+
+Lastly, the upside of this strategy is tremendous. It makes the risk/reward ratio incredible. For simply guessing the lowest price an asset will go, you can make 10-20x on your trade, off of only 3 trades. This is all explained below.
+
 ## Explanation
-You may be thinking "40x leverage position, are you crazy?". But let's check out the math.
+You may be thinking this sounds too good to be true. But let's check out the math.
 
  - If you start this strategy off with a 1.5x leverage long position, you will need to see the asset fall 84% from the price you initally traded at to lose all of your bankroll. If this is the case, we are most likely in a Black Swan event and there are other priorities we would probably be worried about.
  <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/1.5_leverage_tot_liq.png' height = 300 width = 400>
@@ -34,12 +39,12 @@ You may be thinking "40x leverage position, are you crazy?". But let's check out
  - What about something riskier like 3x? To see "Total Liquidation" (when the asset price falls below the graph's plateau), the asset will need to fall 53.17%, which is still a pretty safe bet to make. If the asset falls 33%, we will then open a 6x leveraged position at that price. If the asset falls 40% from the original price, we open a 12x leveraged position. 
  
  <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/3_leverage_tot_liq.png' height = 300 width = 400>
- - Now imagine, you placed these trades towards the bottom of a bear market. You would be holding a heavily leverage position from the very bottom. This is what I meant earlier by this strategy not needing "perfect timing" but "rough timing".
+ - Now imagine, you placed these trades towards the bottom of a bear market. You would be holding a heavily leverage position from the very bottom. This is what I meant earlier by this strategy not needing "perfect timing" but just a worst-case scenario price.
 
 
 ### Profit Taking
 You may also be thinking, "how much would the asset have to rise for me to profit". Each trade that is made, requires a smaller move by the asset for us to break even.
-- Let's continue with our 3x leveraged position example. The asset has fallen 42% since we started trading and we now have a very large 12x leveraged position. We only need to asset to go up 4% to break back even. And as you can see, this line also begins to plateau the more leveraged positions we take.
+- Let's continue with our 3x leveraged position example. The asset has fallen 42% since we started trading and we now have a very large 12x leveraged position. We only need to asset to go up 6.5% to break back even. And as you can see, this line also begins to plateau the more leveraged positions we take.
 <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/3_leverage_to_profit.png' height = 300 width = 400>
 
 - What if the asset were to breakeven? According to the chart below, we would be up about 900% (10x) on our trade.
@@ -57,13 +62,13 @@ One of the downsides of this strategy is you need to be certain that a bottom (o
 Another potential downside (although rare) is the asset price does not move from one liquidation level to another, meaning we can't make bigger trades.
 
 ## Closing Notes
-- This readme mainly talked about this strategy being used in crypto as crypto exhanges are more open to large leveraged positions, however this can just as easily work with stocks and other assets.
- - As mentioned eariler, the downside is relatively small to the size of our trades. Worst comes to worst, we lost the investment in very unique market conditions (the market would have to move 40%+). The upside however, is unlimited. In the 5x leveraged example, if the asset bottoms out at 33% and fully recovers, we are looking at about a 2640% increase in our investment.
+- This readme mainly talked about this strategy being used in crypto as crypto exchanges are more open to large leveraged positions, however this can just as easily work with stocks and other assets.
+ - As mentioned eariler, the downside is relatively small to the size of our trades. Worst comes to worst, we lost the investment in very unique market conditions (the market would have to move 40%+). The upside however, is unlimited. 
 
 ## Risk Management
-This is not financial advice, simply it is exploring the math behind leveraged trading
-To implore this strategy, you must be sure the asset will not hit the Total Liquidation Price
-Based on the charts, it is recommended you split your trade into no more than 6 trades, as after your 6th trade you will be getting liquidated very quickly.
+- This is not financial advice, simply it is exploring the math behind leveraged trading.
+- To implore this strategy, you must be sure the asset will not hit the Total Liquidation Price.
+- Based on the charts, it is recommended you split your trade into no more than 6 trades, as after your 6th trade you will be getting liquidated very quickly.
 
 ## Example
 - Below is an example of this strategy in play:
