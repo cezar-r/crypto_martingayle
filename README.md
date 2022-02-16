@@ -88,7 +88,7 @@ Based on the charts, it is recommended you split your trade into no more than 6 
 <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/10_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/10_leverage_tot_liq.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/10_profit_breakeven.png' height = 300 width = 400>
 
 ## Code
-- All code can be found in strategy.py
+- All code can be found in [strategy.py](https://github.com/cezar-r/crypto_martingayle/blob/master/strategy.py)
 
 ### Total Liquidation Graph
 [Here](https://github.com/cezar-r/crypto_martingayle/blob/0724c9e8cb9300b8f18ddc85f5f76e625579ac84/strategy.py#L17)
