@@ -65,6 +65,10 @@ This is not financial advice, simply it is exploring the math behind leveraged t
 To implore this strategy, you must be sure the asset will not hit the Total Liquidation Price
 Based on the charts, it is recommended you split your trade into no more than 6 trades, as after your 6th trade you will be getting liquidated very quickly.
 
+## Example
+- Below is an example of this strategy in play:
+<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/BTCUSD_2022-02-15_18-35-28.png' height = 380 width = 800>
+
 ## Charts
 - Below are charts that examine each starting leverage position for this strategy.
 - In the following charts, you can identify the leveraged position at each x-value by computing (2^x) * leverage
