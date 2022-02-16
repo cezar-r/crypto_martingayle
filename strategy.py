@@ -105,8 +105,8 @@ def profit_at_breakeven():
 		ax.set_xlabel("# of Trades")
 		ax.set_ylabel("Gains after price breakeven")
 		plt.tight_layout()
-		# plt.savefig(f"imgs/{og_lev}_profit_breakeven.png")
-		plt.show()
+		plt.savefig(f"imgs/{og_lev}_profit_breakeven.png")
+		# plt.show()
 
 
 
