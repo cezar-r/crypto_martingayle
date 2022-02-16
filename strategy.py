@@ -85,15 +85,15 @@ def profit_at_breakeven():
 		og_lev = leverage
 		price = COINPRICE
 		balance = BALANCE
-		x = []
-		gain_pct = []
+		x = [0]
+		gain_pct = [0]
 		trades = 0
 
 		while balance > 0:
 				price = price * (1 - (1/leverage))
 				x.append(trades + 1)
 				leverage *= 2
-				gain_pct.append((((COINPRICE - price)/price) * leverage) * 100)
+				gain_pct.append(((((COINPRICE - price)/price) * leverage)  - ((BALANCE - balance) / 20000)) * 100) 
 				balance -= 20000
 				trades += 1
 
@@ -105,8 +105,8 @@ def profit_at_breakeven():
 		ax.set_xlabel("# of Trades")
 		ax.set_ylabel("Gains after price breakeven")
 		plt.tight_layout()
-		plt.savefig(f"imgs/{og_lev}_profit_breakeven.png")
-		# plt.show()
+		# plt.savefig(f"imgs/{og_lev}_profit_breakeven.png")
+		plt.show()
 
 
 
