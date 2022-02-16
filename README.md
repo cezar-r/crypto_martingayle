@@ -42,9 +42,15 @@ You may also be thinking, "how much would the asset have to rise for me to profi
 - Let's continue with our 3x leveraged position example. The asset has fallen 42% since we started trading and we now have a very large 12x leveraged position. We only need to asset to go up 4% to break back even. And as you can see, this line also begins to plateau the more leveraged positions we take.
 <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/3_leverage_to_profit.png' height = 300 width = 400>
 
+- What if the asset were to breakeven? According to the chart below, we would be up about 900% (10x) on our trade.
+<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/3_profit_breakeven.png' height = 300 width = 400>
+
 - If we look at the 5x Leverage chart, on our 4th trade, when the asset is down 33%, we will have a 80x leveraged position and only need a .6% move in the market to break even. 
-- 
+
 <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/5_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/5_leverage_tot_liq.png' height = 300 width = 400>
+
+- Better yet, if the asset breaks even to where we orignally starting trading, we are up an astounding 4,000% (41x).
+<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/5_profit_breakeven.png' height = 300 width = 400>
 
 ## Downsides
 One of the downsides of this strategy is you need to be certain that a bottom (or top) is coming sometime soon in the market, as well as how far the bottom (or top) is in terms of price (think previous highs or lows).
@@ -63,16 +69,16 @@ Based on the charts, it is recommended you split your trade into no more than 6 
 - Below are charts that examine each starting leverage position for this strategy.
 - In the following charts, you can identify the leveraged position at each x-value by computing (2^x) * leverage
 ### 1.5x 
-<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/1.5_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/1.5_leverage_tot_liq.png' height = 300 width = 400>
+<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/1.5_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/1.5_leverage_tot_liq.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/1.5_profit_breakeven.png' height = 300 width = 400>
 ### 2x 
-<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/2_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/2_leverage_tot_liq.png' height = 300 width = 400>
+<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/2_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/2_leverage_tot_liq.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/2_profit_breakeven.png' height = 300 width = 400>
 ### 3x 
-<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/3_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/3_leverage_tot_liq.png' height = 300 width = 400>
+<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/3_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/3_leverage_tot_liq.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/3_profit_breakeven.png' height = 300 width = 400>
 ### 4x 
-<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/4_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/4_leverage_tot_liq.png' height = 300 width = 400>
+<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/4_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/4_leverage_tot_liq.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/4_profit_breakeven.png' height = 300 width = 400>
 ### 5x 
-<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/5_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/5_leverage_tot_liq.png' height = 300 width = 400>
+<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/5_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/5_leverage_tot_liq.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/5_profit_breakeven.png' height = 300 width = 400>
 ### 6x 
-<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/6_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/6_leverage_tot_liq.png' height = 300 width = 400>
+<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/6_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/6_leverage_tot_liq.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/6_profit_breakeven.png' height = 300 width = 400>
 ### 10x 
-<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/10_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/10_leverage_tot_liq.png' height = 300 width = 400>
+<img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/10_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/10_leverage_tot_liq.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/10_profit_breakeven.png' height = 300 width = 400>
