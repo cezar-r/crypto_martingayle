@@ -82,3 +82,15 @@ Based on the charts, it is recommended you split your trade into no more than 6 
 <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/6_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/6_leverage_tot_liq.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/6_profit_breakeven.png' height = 300 width = 400>
 ### 10x 
 <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/10_leverage_to_profit.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/10_leverage_tot_liq.png' height = 300 width = 400> <img src = 'https://github.com/cezar-r/crypto_martingayle/blob/master/imgs/10_profit_breakeven.png' height = 300 width = 400>
+
+## Code
+- All code can be found in strategy.py
+
+### Total Liquidation Graph
+[Here](https://github.com/cezar-r/crypto_martingayle/blob/38e22534198ea3ac0911b05fbd898e064efa96e0/strategy.py#L19)
+
+### Asset % Increase to Break Even on Bankroll
+[Here](https://github.com/cezar-r/crypto_martingayle/blob/38e22534198ea3ac0911b05fbd898e064efa96e0/strategy.py#L54)
+
+### Gains % When Asset Breaks Even
+[Here](https://github.com/cezar-r/crypto_martingayle/blob/38e22534198ea3ac0911b05fbd898e064efa96e0/strategy.py#L83)
